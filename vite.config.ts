@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
 
-  base: '/AI-based-student-learning-platform/',
+  base: '/AI-BASED-STUDENT-LEARNING-PLATRFORM/',
 
   server: {
     proxy: {
