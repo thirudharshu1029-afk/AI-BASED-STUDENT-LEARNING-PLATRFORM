@@ -126,7 +126,7 @@ function AuthPage({ onAuthenticated, initialError = '', initialMode = 'login', t
           {mode === 'login' && <p className="auth-forgot"><button type="button" onClick={() => changeMode('forgot')}>Forgot your password?</button></p>}
           {(mode === 'login' || mode === 'register') && <p className="auth-switch">{mode === 'login' ? 'New to Orbit?' : 'Already have a space?'} <button type="button" onClick={() => changeMode(mode === 'login' ? 'register' : 'login')}>{mode === 'login' ? 'Create an account' : 'Sign in instead'}</button></p>}
           {(mode === 'forgot' || mode === 'reset') && <p className="auth-switch">Remember your password? <button type="button" onClick={() => changeMode('login')}>Back to sign in</button></p>}
-          <p className="auth-privacy">Your learning space is private to your account.</p>
+          <p className="auth-privacy">Your learning space is saved in this browser on this device.</p>
         </div>
         <footer className="auth-panel-footer"><span>ORBIT LEARNING</span><span>TAKE IT ONE STEP AT A TIME</span></footer>
       </section>
